@@ -9,6 +9,6 @@ set regType="REG_DWORD"
 set data="600"
 
 set regCmd="add %key% /v %name% /t %regType% /d %data% /f"
-REM powershellから管理者権限でコマンドプロンプトを呼び出しregコマンドを実行
+REM powershellから管理者権限でregコマンドを実行
 
 PowerShell Start-Process reg -ArgumentLis '"%regCmd%"' -Verb RunAs
